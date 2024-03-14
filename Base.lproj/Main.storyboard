@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fKi-0n-ZcJ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="0rP-s3-7WQ">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="fKi-0n-ZcJ" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vp7-7c-hLe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-Zl-Hyi">
+                                <rect key="frame" x="79" y="545.66666666666663" width="244" height="54.333333333333371"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" buttonSize="large">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="option1Button">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option1Button:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="CrW-WU-sfl"/>
+                                    <action selector="optionButtonTapped:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="ieu-Zw-qvC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-Ms-VcS">
+                                <rect key="frame" x="79" y="620.33333333333337" width="244" height="54.333333333333371"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" buttonSize="large">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="option2Button">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option2Button:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="sF8-oz-6k4"/>
+                                    <action selector="optionButtonTapped:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="ftY-CC-dYw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wix-JF-43i">
+                                <rect key="frame" x="79" y="704.66666666666663" width="244" height="54.333333333333371"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" buttonSize="large">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="option3Button">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.00054143427834062337" blue="0.00069049873737370149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.90643494599999996" green="0.73067569509999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option3Button:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="Psk-uf-weS"/>
+                                    <action selector="optionButtonTapped:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="Hk9-1J-q3G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZh-Hw-2AD">
+                                <rect key="frame" x="79" y="778.66666666666663" width="244" height="54.333333333333371"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" buttonSize="large">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="option4Button">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="option4Button:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="P2q-v7-egR"/>
+                                    <action selector="optionButtonTapped:" destination="fKi-0n-ZcJ" eventType="touchUpInside" id="hyV-em-zZv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ZwL-WZ-9IB">
+                                <rect key="frame" x="21" y="68.999999999999972" width="351" height="435.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question: 1/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxN-7E-Tz7">
+                                        <rect key="frame" x="121.33333333333334" y="0.0" width="108.66666666666666" height="21"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment: Video Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MS-WO-B9l">
+                                        <rect key="frame" x="64.000000000000014" y="48" width="223.33333333333337" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-FT-XMq">
+                                        <rect key="frame" x="26" y="95.333333333333371" width="299" height="340"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="340" id="qBS-wE-rvM"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Who was the first champion in League of Legends?">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="systemGray6Color"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AkN-Dq-Xnc"/>
+                        <color key="backgroundColor" red="0.79773398526182782" green="0.73471977968954461" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZwL-WZ-9IB" firstAttribute="top" secondItem="AkN-Dq-Xnc" secondAttribute="top" constant="10" id="1ji-Ed-eW5"/>
+                            <constraint firstItem="mZh-Hw-2AD" firstAttribute="trailing" secondItem="Wix-JF-43i" secondAttribute="trailing" id="4lF-IO-zw0"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="top" secondItem="ZwL-WZ-9IB" secondAttribute="bottom" constant="41.333333333333258" id="LpH-Tf-kX5"/>
+                            <constraint firstItem="mZh-Hw-2AD" firstAttribute="leading" secondItem="Wix-JF-43i" secondAttribute="leading" id="PKe-bU-cfO"/>
+                            <constraint firstItem="mZh-Hw-2AD" firstAttribute="top" secondItem="Wix-JF-43i" secondAttribute="bottom" constant="19.666666666666629" id="QVD-7D-Xj5"/>
+                            <constraint firstItem="ZwL-WZ-9IB" firstAttribute="centerX" secondItem="Vp7-7c-hLe" secondAttribute="centerX" id="Sww-st-Naa"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="leading" secondItem="AkN-Dq-Xnc" secondAttribute="leading" constant="79" id="Z0v-Rl-pTG"/>
+                            <constraint firstItem="TLi-Ms-VcS" firstAttribute="top" secondItem="ULs-Zl-Hyi" secondAttribute="bottom" constant="20.333333333333258" id="dwM-jd-v9H"/>
+                            <constraint firstItem="AkN-Dq-Xnc" firstAttribute="trailing" secondItem="ULs-Zl-Hyi" secondAttribute="trailing" constant="70" id="ebS-ma-Ip1"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="leading" secondItem="TLi-Ms-VcS" secondAttribute="leading" id="ffE-Gj-CAd"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="leading" secondItem="Wix-JF-43i" secondAttribute="leading" id="on3-PM-4vH"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="trailing" secondItem="Wix-JF-43i" secondAttribute="trailing" id="sHG-1e-VTJ"/>
+                            <constraint firstItem="ULs-Zl-Hyi" firstAttribute="trailing" secondItem="TLi-Ms-VcS" secondAttribute="trailing" id="tZC-8r-wsH"/>
+                            <constraint firstItem="ZwL-WZ-9IB" firstAttribute="leading" secondItem="AkN-Dq-Xnc" secondAttribute="leading" constant="21" id="tbg-tY-svH"/>
+                            <constraint firstItem="Wix-JF-43i" firstAttribute="top" secondItem="TLi-Ms-VcS" secondAttribute="bottom" constant="30" id="xsR-SQ-45x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="1MS-WO-B9l" id="eTt-9z-0dG"/>
+                        <outlet property="questionNumLabel" destination="RxN-7E-Tz7" id="NDF-ez-k7h"/>
+                        <outlet property="triviaQLabel" destination="HUY-FT-XMq" id="z8J-vF-w1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcl-HQ-Rwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-62.676056338028175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
